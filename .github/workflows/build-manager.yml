@@ -2,14 +2,14 @@ name: Build Manager
 
 on:
   push:
-    branches: [ "main", "ci" ]
+    branches: [ "elementalia" ]
     paths:
       - '.github/workflows/build-manager.yml'
       - 'manager/**'
       - 'kernel/**'
       - 'userspace/ksud/**'
   pull_request:
-    branches: [ "main" ]
+    branches: [ "elementalia" ]
     paths:
       - 'manager/**'
   workflow_call:
